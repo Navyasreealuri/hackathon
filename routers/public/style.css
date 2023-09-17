@@ -1,0 +1,34 @@
+/* Apply styles to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the table header */
+table th {
+    background-color: #f2f2f2; /* Header background color */
+    text-align: left;
+    padding: 8px;
+}
+
+/* Style alternating table rows with different background colors */
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Even row background color */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* Odd row background color */
+}
+
+/* Style table cells (td) */
+table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Add a bottom border to separate rows */
+}
+
+/* Style the action buttons in the last cell of each row */
+table td button {
+    margin-right: 4px;
+}

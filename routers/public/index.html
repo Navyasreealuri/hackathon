@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roles Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" onclick=" fetchRoles()">click here to view details</button>
+    <button id="showAddUserForm">New User</button>
+
+    <h1>Roles</h1>
+    <table id="roles-table">
+        <thead>
+            <tr>
+               
+                  <th>Role Name</th>
+                <th>Department</th>
+                <th>Responsibilities</th>
+                <th>Qualifications</th>
+                <th>Salary</th>
+                <th>Action</th>
+                
+            </tr>
+        </thead>
+        <tbody id="roles-table-body">
+           
+        </tbody>
+    </table>
+    <div id="addUserForm" style="display: none;">
+        <h2>Add New User</h2>
+        <form id="newUserForm">
+          <label for="roleName">Role Name:</label>
+          <input type="text" id="roleName" name="role_name" required><br>
+      
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" required><br>
+      
+          <label for="responsibilities">Responsibilities:</label>
+          <input type="text" id="responsibilities" name="responsibilities" required><br>
+      
+          <label for="qualifications">Qualifications:</label>
+          <input type="text" id="qualifications" name="qualifications" required><br>
+      
+          <label for="salary">Salary:</label>
+          <input type="number" id="salary" name="salary" required><br>
+      
+          <button type="submit">Create</button>
+        </form>
+      </div>
+      
+    <script src="main.js"></script>
+</body>
+</html>
